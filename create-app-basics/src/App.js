@@ -1,7 +1,13 @@
 import React from "react";
+import Navbar from "./components/Navbar";
+import './style.css' 
+import Main from "./components/Main";
 
 const App = () => {
-  return <div>Hello, Create React App!</div>;
+  return <>
+  <Navbar />
+  <Main />
+  </>;
 };
 
 export default App;

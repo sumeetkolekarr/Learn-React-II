@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #312F2C;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.card{
+  width: 300px;
+  height: 600px;
+  background-color: #151514;
+  border-radius: 25px;
+}
+
+.myPic{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 300px;
+  object-fit: cover;
+  height: 180px;
+}
+
+.center{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.name{
+  color: aliceblue;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.profile{
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin: -10px 0px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.contact{
+  color: aliceblue;
+  text-align: center;
+  color: #a1a1a1;
+}
+
+.email, .linkedIn{
+  background-color: aliceblue;
+  color: #151514;
+  height: 32px;
+  width: 100px;
+  margin: 0px 25px;
+  border-radius: 5px;
+  border: #151514;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedIn{
+  background-color: rgb(18, 140, 255);
+}
+
+.btns{
+  display: flex;
+  width: 300px;
+  height: 50px;
+}
+
+.lklg, .emlg{
+  margin: 0px 5px;
+}
+
+.abt{
+  color: aliceblue;
+  margin: -20px 25px;
+}
+
+.abt > p{
+  font-size: 12px;
+  margin: -18px 0px;
+  color: #a1a1a1;
+}
+
+.int{
+  color: aliceblue;
+  margin: 35px 25px;
+}
+
+.int > p{
+  font-size: 12px;
+  margin: -18px 0px;
+  color: #a1a1a1;
+}
+
+.ftimgs{
+  background-color: aliceblue;
+  width: 300px;
+  height: 50px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lgimg{
+  width: 50px;
+  height: 25px;
+}
