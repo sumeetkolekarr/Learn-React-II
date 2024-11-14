@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.nav {
+  width: 100vw;
+  height: 7.5vh;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  padding: 0 12.5vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.176);
+}
+
+.nav > h4 {
+  padding: 0 12px;
+}
+
+.main {
+  padding: 0 12.5vw;
+  display: flex;
+  width: 100vw;
+  height: 22.5vh;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.main h2 {
+  width: 25vw;
+  padding: 0px 48px;
+  font-size: 48px;
+}
+
+.main p {
+  font-size: 18px;
+}
+
+.tags {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  display: flex;
+}
+
+.tag {
+  border: 1px solid black;
+  padding: 2px 12px;
+  border-radius: 13px;
+  margin: 5px 7px 0 0;
+}
+
+.jokes {
+  padding: 0 12.5vw;
+  width: 100vw;
+  background-color: aliceblue;
+  min-height: 80vh;
+}
+
+.joke{
+  background-color: palegoldenrod;
+  height: max-content;
+  width: 75vw;
+  padding: 5px 12px;
+  margin: 12px 0;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.jokeTitle{
+  display: flex;
+  align-items: center;
+}
+
+.jokeTitle>h3{
+  padding: 0 0 0 7px;
+}
+
+.joke>p{
+  padding: 0 0 0 38px;
+}
