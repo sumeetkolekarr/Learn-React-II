@@ -2,8 +2,11 @@ import React from "react";
 import "./style.css";
 import { SiReactrouter } from "react-icons/si";
 import Joke from "./Joke";
+import jokesdata from "./jokesData";
 
 const App = () => {
+  console.log(jokesdata.setup);
+  // const jokeElements = ;
   return (
     <>
       <div className="body">
@@ -27,10 +30,14 @@ const App = () => {
           </div>
         </div>
         <div className="jokes">
-          <Joke setup="Why don’t skeletons fight each other?" punchline="They don’t have the guts." isPun={true} upVotes={15}/>
-          <Joke setup="What do you call fake spaghetti?" punchline="An impasta!" isPun={true} upVotes={10}/>
-          <Joke setup="Why don’t scientists trust atoms?" punchline="Because they make up everything!" isPun={true} upVotes={12}/>
-          <Joke punchline="Why don't programmers like nature? It has too many bugs." isPun={true} upVotes={5}/>
+          {jokesdata.map((obj) => (
+              <Joke
+                setup={obj.setup}
+                punchline={obj.punchline}
+                isPun={obj.isPun}
+                upVotes={obj.upVotes}
+              />
+          ))}
         </div>
       </div>
     </>

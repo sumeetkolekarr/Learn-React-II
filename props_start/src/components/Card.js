@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 // import p1 from '../assets/p1.webp'
 import { FaStar } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
@@ -23,22 +23,35 @@ import { GoDotFill } from "react-icons/go";
 // }
 
 //Data Fetching through Destructuring
-const Card = ({img,name, email, phno}) => {
+const Card = ({ img, name, email, phno, isAvailable, location }) => {
+  let badgeText;
+  if (isAvailable === 0) {
+    badgeText = "Sold Out";
+  } else if (location === "Online") {
+    badgeText = "ONLINE";
+  }
   return (
-    <div className='card'>
-        <img src={img} alt="Person 1" className='cardImg'/>
-        <div className="cardStats">
-        <FaStar className='cardStar'/>
+    <div className="card">
+      {badgeText !== undefined && <p>{badgeText}</p>}
+      <img src={img} alt="Person 1" className="cardImg" />
+      <div className="cardStats">
+        <FaStar className="cardStar" />
         <span>5.0</span>
-        <span className='grey'>(6) <GoDotFill /> </span>
-        <span className='grey'>USA</span>
-        </div>
-        <p>{name}</p>
-        {/* <p><span className='bold'>From $136</span> / person</p> */}
-        <p><span className='bold'>{email}</span></p>
-        <p><span className='bold'>{phno}</span></p>
+        <span className="grey">
+          (6) <GoDotFill />{" "}
+        </span>
+        <span className="grey">USA</span>
+      </div>
+      <p>{name}</p>
+      {/* <p><span className='bold'>From $136</span> / person</p> */}
+      <p>
+        <span className="bold">{email}</span>
+      </p>
+      <p>
+        <span className="bold">{phno}</span>
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

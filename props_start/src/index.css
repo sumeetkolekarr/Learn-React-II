@@ -44,6 +44,12 @@ section{
 .card{
   width: 175px;
   font-size: 12px;
+  margin: 0 12px;
+}
+
+.cards-list{
+  display: flex;
+  flex-direction: row;
 }
 
 .cardImg{
