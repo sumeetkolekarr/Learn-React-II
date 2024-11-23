@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: paleturquoise;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.header {
+  height: 10vh;
+  width: 95vw;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vh 2.5vw;
+  background-color: palegoldenrod;
+  color: chocolate;
+}
+
+.globe {
+  color: white;
+  font-size: 50px;
+  margin: 0 18px;
+}
+
+.content {
+  height: max-content;
+  width: 85vw;
+  margin: 7.5vh 7.5vw;
+}
+
+.placeImg {
+  height: 250px;
+  width: 175px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card {
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.locator {
+  color: palevioletred;
+  font-size: 25px;
+  margin-right: 4px;
+}
+
+.img {
+  margin: 0 25px;
+}
+
+.info {
+  height: 200px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.placeName {
+  letter-spacing: 0.25px;
+  margin-right: 12px;
+}
+
+.location > a {
+  color: rgb(182, 181, 181);
+}
+
+.info > h1 {
+  margin-top: 7px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info > h4 {
+  margin-top: 18px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info > p {
+  margin-top: 12px;
+  width: 576px;
+}
+
+.footer {
+  height: 25px;
+}

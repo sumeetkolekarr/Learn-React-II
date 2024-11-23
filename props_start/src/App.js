@@ -11,8 +11,13 @@ const App = () => {
       <Navbar />
       <Hero />
       <section className="cards-list">
-        {data.map((dt, idx) => (
-          <Card key={idx} className='card' img={dt.img} name={dt.name} phno={dt.phno} email={dt.email} isAvailable={dt.isAvailable} location={dt.location} />
+        {data.map((item, idx) => (
+          <Card
+          className="card"
+            key={idx}
+            {...item}
+            // item={item}
+          />
         ))}
       </section>
     </div>

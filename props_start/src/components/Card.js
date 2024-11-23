@@ -23,17 +23,17 @@ import { GoDotFill } from "react-icons/go";
 // }
 
 //Data Fetching through Destructuring
-const Card = ({ img, name, email, phno, isAvailable, location }) => {
+const Card = (props) => {
   let badgeText;
-  if (isAvailable === 0) {
+  if (props.isAvailable === 0) {
     badgeText = "Sold Out";
-  } else if (location === "Online") {
+  } else if (props.location === "Online") {
     badgeText = "ONLINE";
   }
   return (
     <div className="card">
       {badgeText !== undefined && <p>{badgeText}</p>}
-      <img src={img} alt="Person 1" className="cardImg" />
+      <img src={props.img} alt="Person 1" className="cardImg" />
       <div className="cardStats">
         <FaStar className="cardStar" />
         <span>5.0</span>
@@ -42,13 +42,13 @@ const Card = ({ img, name, email, phno, isAvailable, location }) => {
         </span>
         <span className="grey">USA</span>
       </div>
-      <p>{name}</p>
+      <p>{props.name}</p>
       {/* <p><span className='bold'>From $136</span> / person</p> */}
       <p>
-        <span className="bold">{email}</span>
+        <span className="bold">{props.email}</span>
       </p>
       <p>
-        <span className="bold">{phno}</span>
+        <span className="bold">{props.phno}</span>
       </p>
     </div>
   );
