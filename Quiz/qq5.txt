@@ -1,0 +1,3 @@
+Q. You have 2 options for what you can pass in to a state setter function (e.g. `setCount`). What are they?
+    1. New Value of state (setCount(42)) // Use it when you don't need the previous value of variable
+    2. Callback Function // Use it when you need previous value
