@@ -2,15 +2,25 @@ import React, { useState } from "react";
 import memeData from "./memeData";
 
 const Meme = () => {
-  const [imgUrl, setImgUrl] = useState("");
-  const [name, setName] = useState("");
+  // const [arr, setArr] = useState() //Made by Me
+  const [meme, setMeme] = useState({
+    topText: "",
+    bottomText: "",
+    randomImg: "http://i.imgflip.com/1bij.jpg",
+  });
+
+  const [allMemeImg, setAllMemeImg] = useState(memeData);
   const generateMeme = (e) => {
     e.preventDefault();
     let num = Math.floor(Math.random() * memeData.data.memes.length);
     const randomMemeUrl = memeData.data.memes[num].url;
-    const randomMemeName = memeData.data.memes[num].name;
-    setImgUrl(randomMemeUrl);
-    setName(randomMemeName)
+    setMeme((prev) => {
+      return {
+        ...prev,
+        randomImg: randomMemeUrl,
+      };
+    });
+    // setArr(randomMemeUrl); //Made by Me
     console.log(randomMemeUrl);
   };
   // Ternary Operator
@@ -27,10 +37,10 @@ const Meme = () => {
           </button>
         </form>
       </main>
-      {imgUrl && (
+      {meme && (
         <div className="meme_img">
-          <h1>{name}</h1>
-          <img src={imgUrl} alt="MemeImg"  />
+          {/* <h1>{arr.name}</h1> */}
+          <img src={meme.randomImg} alt="MemeImg" />
         </div>
       )}
     </>

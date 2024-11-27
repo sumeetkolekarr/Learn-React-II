@@ -2,6 +2,10 @@ import React from "react";
 import "./style.css";
 import Header from "./Header";
 import Meme from "./Meme";
+// import AddItems from "./AddItems";
+// import UseStArray from "./UseStArray";
+// import RealUseCase from "./RealUseCase";
+// import UseStPractice from "./UseStPractice";
 // import UseSt from "./UseSt";
 
 const App = () => {
@@ -10,22 +14,16 @@ const App = () => {
       <Header />
       <Meme />
       {/* <UseSt/> */}
+      {/* <UseStPractice/> */}
+      {/* <AddItems /> */}
+      {/* <UseStArray /> */}
+      {/* <RealUseCase /> */}
     </>
   );
 };
 
 export default App;
 
-
-//A1
-// const thingsArray = ["Thing 1", "Thing 2"];
-// const btnPress = () => {
-//   thingsArray.push(`Thing ${thingsArray.length + 1}`);
-//   document.getElementById()
-//   console.log(thingsArray);
-// };
-
-// A2
 // Props are Like the name parameter which should not be changed in the function and state in React is just like timeofday variable which changes according to the conditions
 // function greet(name) {
 //   const date = new Date();
@@ -42,12 +40,6 @@ export default App;
 //   }
 //   return `Good ${timeofDay}, ${name}!`;
 // }
-
 // console.log(greet("Sumeet"));
-// <div>
-//   <button onClick={btnPress}>Add Item</button>
-// </div>
-// {thingsArray.map((obj, idx) => {
-//   return <p key={idx}>{obj}</p>;
-// })}
+
 
