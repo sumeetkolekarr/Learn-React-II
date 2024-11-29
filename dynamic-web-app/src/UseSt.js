@@ -1,4 +1,5 @@
 import React from "react";
+import Count from "./Count";
 
 const UseSt = () => {
   //   const [result, setResult] = React.useState("Yes");
@@ -9,14 +10,15 @@ const UseSt = () => {
   //   }
   function handleInc() {
     // setNumber(number+1)
-    setNumber(prevCount=>prevCount+1)
-}
-function handleDec() {
-    setNumber(prevCount=>prevCount-1)
+    setNumber((prevCount) => prevCount + 1);
   }
+  function handleDec() {
+    setNumber((prevCount) => prevCount - 1);
+  }
+  console.log("App Component Rendered");
   return (
     <>
-      <div>{number}</div>
+      <Count num={number} />
       <button onClick={handleInc}>Click ++</button>
       <button onClick={handleDec}>Click --</button>
     </>

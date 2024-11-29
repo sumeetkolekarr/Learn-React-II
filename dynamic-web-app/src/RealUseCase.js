@@ -1,5 +1,5 @@
 import React from "react";
-import { RiStarFill, RiStarLine } from "react-icons/ri";
+import Star from "./Star";
 
 const RealUseCase = () => {
   const [contact, setContact] = React.useState({
@@ -19,7 +19,7 @@ const RealUseCase = () => {
  }
   return (
     <>
-      <div onClick={toggleFav}>{contact.isfav ? <RiStarFill /> : <RiStarLine />}</div>
+      <Star handleClick={toggleFav} isFav = {contact.isfav}/>
       <h1>
         {contact.firstName} {contact.lastName}
       </h1>

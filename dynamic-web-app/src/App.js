@@ -2,17 +2,38 @@ import React from "react";
 import "./style.css";
 import Header from "./Header";
 import Meme from "./Meme";
+import NameHeader from "./NameHeader";
+import Box from "./Box";
 // import AddItems from "./AddItems";
 // import UseStArray from "./UseStArray";
 // import RealUseCase from "./RealUseCase";
 // import UseStPractice from "./UseStPractice";
 // import UseSt from "./UseSt";
 
-const App = () => {
+const App = (props) => {
+  // For NameHeader
+  // const [user, setUser] = React.useState("Bunny");
   return (
     <>
-      <Header />
-      <Meme />
+      {
+        // Meme Generator
+      }
+      {/* <Header />
+      <Meme /> */}
+
+      {
+        // Boxes Challenge
+      }
+      <Box darkMode={props.darkMode}/>
+
+      {
+        // Using Props to pass state values
+      }
+      {/* <NameHeader name={user} /> */}
+
+      {
+        // Learning UseState
+      }
       {/* <UseSt/> */}
       {/* <UseStPractice/> */}
       {/* <AddItems /> */}
@@ -41,5 +62,3 @@ export default App;
 //   return `Good ${timeofDay}, ${name}!`;
 // }
 // console.log(greet("Sumeet"));
-
-
