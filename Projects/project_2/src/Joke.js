@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { GiCardJoker } from "react-icons/gi";
 
 const Joke = ({ setup, punchline, isPun, upVotes }) => {
-    console.log(setup, punchline, isPun, upVotes)
-    return (
+  const [isShown, setIsShown] = useState(false);
+
+  const toggleBtn = () => {
+    setIsShown((prev) => !prev);
+  };
+
+  console.log(setup, punchline, isPun, upVotes);
+  return (
     <>
       <div className="joke">
         {setup && (
@@ -25,7 +31,10 @@ const Joke = ({ setup, punchline, isPun, upVotes }) => {
         ) : (
           <></>
         )} */}
-        <p>{punchline}</p>
+        {isShown && <p>{punchline}</p>}
+        <button onClick={toggleBtn} type="button">
+          {isShown ? "Hide Punchline" : "Show Punchline"}
+        </button>
       </div>
     </>
   );

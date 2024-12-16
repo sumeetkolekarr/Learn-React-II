@@ -10,7 +10,7 @@ import Box from "./Box";
 // import UseStPractice from "./UseStPractice";
 // import UseSt from "./UseSt";
 
-const App = (props) => {
+const App = () => {
   // For NameHeader
   // const [user, setUser] = React.useState("Bunny");
   return (
@@ -24,7 +24,7 @@ const App = (props) => {
       {
         // Boxes Challenge
       }
-      <Box darkMode={props.darkMode}/>
+      <Box darkMode={false}/>
 
       {
         // Using Props to pass state values
