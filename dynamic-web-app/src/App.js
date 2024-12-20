@@ -2,8 +2,8 @@ import React from "react";
 import "./style.css";
 import Header from "./Header";
 import Meme from "./Meme";
-import NameHeader from "./NameHeader";
-import Box from "./Box";
+// import NameHeader from "./NameHeader";
+// import Box from "./Box";
 // import AddItems from "./AddItems";
 // import UseStArray from "./UseStArray";
 // import RealUseCase from "./RealUseCase";
@@ -18,13 +18,13 @@ const App = () => {
       {
         // Meme Generator
       }
-      {/* <Header />
-      <Meme /> */}
+      <Header />
+      <Meme />
 
       {
         // Boxes Challenge
       }
-      <Box darkMode={false}/>
+      {/* <Box darkMode={false}/> */}
 
       {
         // Using Props to pass state values

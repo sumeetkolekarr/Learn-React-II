@@ -1,10 +1,10 @@
 import React from "react";
-import ConditionalPractice from "./components/ConditionalPractice";
+import EffectUsage from "./components/EffectUsage";
 
 const App = () => {
   return (
     <>
-      <ConditionalPractice />
+      <EffectUsage />
     </>
   );
 };
