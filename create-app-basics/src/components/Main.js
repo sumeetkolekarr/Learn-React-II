@@ -1,9 +1,9 @@
 import React from "react";
 // import bg from '../images/bg-icon.png'
 
-const Main = () => {
+const Main = (props) => {
   return (
-    <main className="mainTitle">
+    <main className={props.darkMode ? "dark maintitle" : "mainTitle"}>
       {/* <img src={bg} alt="Background" className="bgImg"/> */}
       <h1>Fun Facts About React</h1>
       <ul className="main_facts">
